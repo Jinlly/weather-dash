@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiallin Weather dash board</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/script/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div calss="header">
+            <div class="incon-container">
+                <canvas id="icon" width="100" height="100"></canvas>
+            </div>
+        </div>
+        <div calss="content">
+            <div class="genneral-info">
+                <div class="status">Enter A city</div>
+                <div class="location">To find the Weather</div>
+            </div>
+            <div class="info-section">
+                <div class="info">
+                    <div class="title">Temperature:</div>
+                    <div class="value">XXX</div>
+                </div>
+                <div class="info-section">
+                    <div class="info">
+                        <div class="title">Humidity:</div>
+                        <div class="value">XXX</div>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <div class="info">
+                        <div class="title">Wind Speed:</div>
+                        <div class="value">XXX</div>
+                    </div>
+                </div>
+                <div id="five-day-forecast" class="mt-5"></div>
+            </div>
+        </div>
+        <div class="searchBar">
+            <input type="text" class="city-search" placeholder="Enter A Location">
+        </div>
+    </div>
+</body>
+
+</html>
