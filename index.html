@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiallin Weather dash board</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/script/script.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- City name as header-->
+    <div id="header" class="head-container">
+        <h1 id="header-text" class="header"></h1>
+    </div>
+
+
+    <!--body flexbox container-->
+    <div class="body-container">
+        <div class="row">
+            <!--left side-->
+            <div id="content-left">
+                <form>
+                    <label for="citySearch"><h1 class ="text-rose-100 text-3xl mt-8">Enter a City to get it's Weather:</h1></label>
+                    <div class="form-row">
+                        <input id="search-city" class="form-control" name="city" value="Toronto"></input>
+                        <!-- search buttton -->
+                        <button id="search-button" class="btn" type="submit"><h1 class ="text-rose-100 text-3xl mt-8">Search!</h1></button>
+                    </div>
+                </form>
+                <ul id="city-results" class="list-group mt-4"></ul>
+                <a id="clear-storage" href="#"></a>
+            </div>
+
+            <!-- Right side content showing current weather and five day forecast displays on search -->
+            <div id="content-right" class="col-md-9 pt-4">
+                <!-- Current weather displayed on top -->
+                <div id="current-weather" class="border rounded"></div>
+                <!-- Five day forecast below the current weather -->
+                <div id="five-day-forecast" class="mt-5"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+</html>
