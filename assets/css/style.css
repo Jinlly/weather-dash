@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to right, aqua, darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    width: 1200px;
+    box-shadow: 0 5px 10px;
+    border-radius: 5px;
+    font-size: 300%;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+#current-weather {
+    padding-left: 15px;
+}
+
+
+/* Weather card styling */
+
+.weather-card {
+    width: 9rem;
+    background-color: #0275d8;
+    color: rgb(2, 2, 2);
+    text-align: center;
+}
+
+.btn {
+    background-color: bisque;
+}
+
+
+/* UV coloring scheme for UV display */
+
+.uv-favorable {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+
+.uv-moderate {
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+}
+
+.uv-severe {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 992px) {
+    #search-city {
+        width: 100%;
+    }
+    #search-button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #fiveDayForecastUl {
+        justify-content: center;
+    }
+}
